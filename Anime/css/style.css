@@ -1,0 +1,148 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+html { /*css reset*/
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }  
+
+:root {
+    --laranja: #FF4500;
+    --azul:#202C59;
+    --marrom:#540804;
+    --linho:#fff0b2;
+    --amarelo:#FF9C01;
+
+}
+
+body {
+    background-color: #FF9C01;
+  
+}
+main{
+    width: 90%;
+    background-position: center;
+    background-color: #fff0b2;
+    margin: 0 auto;
+}
+
+nav{
+ width: 90%;
+ height: 70px;
+ margin: auto;
+ background-color: #FF4500;
+
+
+}
+li{
+    display: inline-block;
+    margin: 0px 50px 0px 50px;
+    height: 40px;
+}
+
+a:hover{ /*quando passa aseta em cima no menu e dá cor, como um botão*/
+    background-color:#FF9C01;
+   
+}
+
+a:visited{ /*cor do link que já foi clicado*/
+ color: #140046;
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FF9C01;
+    background-color: #FF4500;
+    border: 1px solid #FF4500;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    /* Estiliza os links (<a>) dentro dos itens da lista como botões. Define padding interno, cores de texto e fundo, borda, borda arredondada e transição suave para animações de hover.*/
+}
+
+nav a:hover {
+    background-color: #FF9C01;
+    color: #fff;
+}
+
+h1{
+    color: var(--marrom);font-family: Verdana, Geneva, Tahoma, sans-serif 'Times New Roman', Times, serif; font-size: 2em; line-height: 1.3em
+}
+
+
+article{
+    font-size: 30px;
+    color: #540804;
+}
+
+fieldset {
+    border: 2px solid #540804;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    /*O <fieldset> é estilizado com uma borda sólida, borda arredondada, padding interno e margem inferior para criar um espaço visualmente agradável ao redor dos radios.*/
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    /*A <legend> dentro do <fieldset> é estilizada para ter peso de fonte negrito e uma margem inferior para separá-la dos radios.*/
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    /*Os <label>s são exibidos como blocos para que cada radio esteja em sua própria linha, e há uma margem inferior para separar os labels.*/
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    /*Os <input type="radio"> têm um pequeno espaço (margin-right) à direita para separá-los um do outro.*/
+}
+
+section{
+text-align: center;
+}
+
+div:hover{
+    background-color: #ff6730;
+}
+
+div:hover > .invisivel{
+ display: block;
+
+}
+.invisivel{
+    display: none;
+}
+footer{
+    font-size: 30px;
+    text-align: center;
+    background-color: var(--azul)
+}
